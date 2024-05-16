@@ -61,3 +61,37 @@
   ```
   - 오류 발생시
     - 404 Not Found: 만료된 링크거나 없는 링크인 경우.
+
+# 실행방법
+
+## venv 사용
+
+### 기본 세팅
+
+```
+python -m venv .venv
+. .venv/bin/activate
+pip install -r requirements.txt
+```
+
+### 실행
+
+```
+uvicorn main:app --reload
+```
+
+## conda 사용
+
+### 기본 세팅
+
+```
+conda create -n <가상환경 이름> python=3.11
+conda activate <가상환경 이름>
+pip install -r requirements.txt
+```
+
+### 실행
+
+```
+uvicorn main:app --reload
+```
