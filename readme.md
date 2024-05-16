@@ -26,8 +26,9 @@
   아래와 같이 expire_date를 추가할 수 있습니다.
 
   ```
-  {   "url" : "<original_url>",
-      "expire_date": "YYYY-MM-DD HH:MM:SS"
+  {
+    "url" : "<original_url>",
+    "expire_date": "YYYY-MM-DD HH:MM:SS"
   }
   ```
 
