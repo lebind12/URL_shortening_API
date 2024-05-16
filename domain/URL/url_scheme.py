@@ -13,7 +13,7 @@ class URLShortenStatus(BaseModel):
     shorten_url:str
 
 class URLCreate(BaseModel):
-    original_url: str
+    url: str
     expire_date: Optional[str] = None
     
     @field_validator("expire_date")

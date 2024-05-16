@@ -48,7 +48,7 @@ def create_shorten_url(db: Session, _shorten_url: str,
     if url_create.expire_date:
         date = datetime.datetime.strptime(url_create.expire_date, "%Y-%m-%d %H:%M:%S")
     _url = models.URL(shorten_key=_shorten_url,
-                      original_url=url_create.original_url,
+                      original_url=url_create.url,
                       expire_date=date,
                       views = 0)
     db.add(_url)
